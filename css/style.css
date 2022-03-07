@@ -1,5 +1,8 @@
 /* change these */
-
+@font-face {
+  src: url(fonts/Mogan-Regular.ttf);
+  font-family: Mogan;
+}
 @import url("https://use.typekit.net/fau2fiu.css");
 @import url("https://use.typekit.net/fau2fiu.css");
 
@@ -13,15 +16,15 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: #faedb5;
-  --link-color: #f28241;
-  --link-hover-color: #d9bad5;
-  --color-4: #f5a040;
-  --color-5: #bbbf99;
+  --bg-color: #ffff;
+  --link-color: #f3b3b9;
+  --link-hover-color: #a9a1ca;
+  --color-4: #97cfca;
+  --color-5: #a2c8f4;
 
-  --primary-font: "KansasNew", serif;
+  --primary-font: Mogan, serif;
   --secondary-font: "Agenda", sans-serif;
-  --main-text-color: #404040;
+  --main-text-color: #364b3e;
 
   --white-space: 1rem;
 }
@@ -66,7 +69,6 @@ footer {
 
 header {
   background-color: var(--link-hover-color);
-  background-size: cover;
 }
 .full-width {
   background: var(--bg-color);
@@ -77,8 +79,6 @@ header {
 .header-wrapper h1 {
   font-family: var(--primary-font);
   font-size: 3rem;
-  text-shadow: -0.3rem 0.2rem var(--link-color);
-  letter-spacing: -2px;
   padding-right: 0.75em;
   font-weight: bold;
   color: var(--bg-color);
@@ -87,7 +87,7 @@ header {
 .header-wrapper h2 {
   font-family: var(--secondary-font);
   font-size: 1.6em;
-  color: var(--link-color);
+  color: var(--bg-color);
   font-weight: bolder;
   margin: var(--white-space) 0;
 }
@@ -95,7 +95,7 @@ header {
 .header-wrapper h3 {
   font-family: var(--secondary-font);
   font-size: 1.2rem;
-  color: var(--link-color);
+  color: var(--bg-color);
 }
 
 main {
@@ -130,7 +130,7 @@ ul li:last-child {
 
 .color-swatch-1 {
   background-color: var(--bg-color);
-  border: solid #f5a040;
+  border: solid var(--link-color);
 }
 
 .color-swatch-2 {
@@ -142,11 +142,11 @@ ul li:last-child {
 }
 
 .color-swatch-4 {
-  background-color: var(--link-hover-color);
+  background-color: var(--color-5);
 }
 
 .color-swatch-5 {
-  background-color: var(--color-5);
+  background-color: var(--link-hover-color);
 }
 
 .textures li {
@@ -156,17 +156,12 @@ ul li:last-child {
 }
 
 .texture-swatch-2 {
-  background: url(../img/texture2.jpeg);
+  background: url(../img/texture1.png);
   background-size: cover;
 }
 
 .texture-swatch-1 {
-  background: url(../img/texture3.jpeg);
-  background-size: cover;
-}
-
-.texture-swatch-3 {
-  background: url(../img/texture1.jpeg);
+  background: url(../img/texture2.png);
   background-size: cover;
 }
 
@@ -183,12 +178,11 @@ ul li:last-child {
 
 button {
   padding: 1rem;
-  border-radius: 3rem;
+  border-radius: 1rem;
   background: var(--link-color);
   text-align: center;
   text-decoration: none;
-  font: bold 1.25em/1 var(--primary-font);
-  letter-spacing: 1px;
+  font: bold 1.25em/1 var(--secondary-font);
   color: white;
   transition: all 0.2s ease;
   cursor: pointer;
